@@ -25,10 +25,10 @@ sudo pip install paho-mqtt
 sudo apt-get update
 sudo locale-gen en_US.UTF-8
 sudo update-locale
-cd /home/pi/Desktop/ser-pi/DVDR_Client-master/Deployment
+cd /home/pi/Desktop/ser-pi-master/DVDR_Client-master/Deployment
 echo Enter server IP adress eg.115.146.90.117
 read ipaddress
-echo $ipaddress  > /home/pi/Desktop/ser-pi/DVDR_Client-master/client/ipaddress.txt
+echo $ipaddress  > /home/pi/Desktop/ser-pi-master/DVDR_Client-master/client/ipaddress.txt
 sudo cp superscript /etc/init.d/
 sudo chmod 755 /etc/init.d/superscript
 sudo update-rc.d superscript defaults
