@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # /etc/init.d/superscript
-cd /home/pi/Desktop/stem-project/DVDR_Client-master/client
+cd /home/pi/Desktop/ser-pi/DVDR_Client-master/client
 sudo python asynchronous.py
 
 

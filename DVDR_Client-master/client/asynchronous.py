@@ -109,7 +109,12 @@ except ImportError:
     print "Import Error"
 
 #MQTT Server address
-server = '35.189.4.239' #server = '115.146.90.117'
+file_open = open("ipaddress.txt", "r") #opens file with name of "test.txt"
+server = file_open.read()
+server = server.strip(' \t\n\r')
+print server
+file_open.close()
+# server = '35.189.4.239' #server = '115.146.90.117'
 
 #subscribe topic
 pub_register = 'new device' #publish topic for device configuration
